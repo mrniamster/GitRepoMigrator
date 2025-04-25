@@ -501,7 +501,7 @@ Only public repository commits and tags can be migrated without a token.
 
     try:
         # Clone and push the repository
-        # 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
+        
         clone_repo(source_url, temp_dir, verbose=verbose)
         fetch_tags(temp_dir, verbose=verbose)
         push_repo(temp_dir, target_url, verbose=verbose)
