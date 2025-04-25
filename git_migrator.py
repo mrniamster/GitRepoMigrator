@@ -500,7 +500,7 @@ Only public repository commits and tags can be migrated without a token.
         run_command(["rm", "-rf", temp_dir], verbose=verbose)
 
     try:
-        # Clone and push the repository        
+        # Clone and push the repository.        
         clone_repo(source_url, temp_dir, verbose=verbose)
         fetch_tags(temp_dir, verbose=verbose)
         push_repo(temp_dir, target_url, verbose=verbose)
